@@ -1,0 +1,49 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        testOptions {
+            execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    kapt 'com.google.dagger:dagger-compiler:2.21'
+    kapt 'com.google.dagger:dagger-android-processor:2.21'
+
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.guava:guava:27.1-android'
+    implementation 'org.checkerframework:checker-compat-qual:2.5.5'
+    implementation 'com.google.errorprone:error_prone_annotations:2.3.1'
+
+    androidTestUtil 'androidx.test:orchestrator:1.1.1'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.1-alpha02'
+    androidTestImplementation 'androidx.test.ext:truth:1.2.0-alpha02'
+    androidTestImplementation 'com.google.guava:guava:27.1-android'
+    androidTestImplementation 'com.google.truth:truth:0.43'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.fragment:fragment-testing:1.1.0-alpha05'
+}

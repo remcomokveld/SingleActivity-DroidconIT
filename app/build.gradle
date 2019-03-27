@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+apply from: rootProject.file('gradle/default-android-module.gradle')
+
+android {
+    defaultConfig {
+        applicationId "nl.remcomokveld.nhl"
+        versionCode 2
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':features:main-app')
+    implementation project(':features:onboarding')
+    implementation project(':features:paywall')
+    implementation project(':features:splash')
+}

@@ -1,0 +1,5 @@
+apply from: rootProject.file("gradle/default-library-module.gradle")
+
+dependencies {
+    implementation(project(":core"))
+}

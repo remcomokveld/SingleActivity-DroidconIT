@@ -1,0 +1,11 @@
+include ':core',
+        ':features:main-app',
+        ':features:match',
+        ':features:my-team',
+        ':features:onboarding',
+        ':features:paywall',
+        ':features:scoreboard',
+        ':features:settings',
+        ':features:splash',
+        ':features:welcome',
+        ':app'

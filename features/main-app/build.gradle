@@ -1,0 +1,10 @@
+apply from: rootProject.file("gradle/default-library-module.gradle")
+
+dependencies {
+    implementation(project(":core"))
+    implementation(project(":features:match"))
+    implementation(project(":features:my-team"))
+    implementation(project(":features:scoreboard"))
+    implementation(project(":features:settings"))
+    api(project(":features:welcome"))
+}

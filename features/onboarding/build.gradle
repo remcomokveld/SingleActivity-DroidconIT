@@ -1,0 +1,9 @@
+apply from: rootProject.file("gradle/default-library-module.gradle")
+
+dependencies {
+    implementation project(":core")
+    implementation project(":features:paywall")
+
+    api 'com.android.billingclient:billing:1.2.2'
+    implementation 'androidx.browser:browser:1.0.0'
+}

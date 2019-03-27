@@ -1,0 +1,30 @@
+apply from: rootProject.file("gradle/default-library-module.gradle")
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'androidx.appcompat:appcompat:1.1.0-alpha03'
+    api 'androidx.core:core-ktx:1.1.0-alpha05'
+    api 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha03'
+    api 'androidx.lifecycle:lifecycle-common-java8:2.1.0-alpha03'
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-alpha03'
+    api 'androidx.fragment:fragment-ktx:1.1.0-alpha05'
+    api 'androidx.preference:preference-ktx:1.1.0-alpha04'
+
+    api 'com.google.android.material:material:1.1.0-alpha05'
+
+    api 'io.reactivex.rxjava2:rxjava:2.2.7'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+
+    api 'com.uber.autodispose:autodispose:1.0.0'
+    api 'com.uber.autodispose:autodispose-ktx:1.0.0'
+    api 'com.uber.autodispose:autodispose-android-archcomponents:1.0.0'
+    api 'com.uber.autodispose:autodispose-android-archcomponents-ktx:1.0.0'
+
+    api 'com.xwray:groupie:2.3.0'
+    api 'com.xwray:groupie-kotlin-android-extensions:2.3.0'
+
+
+    api 'com.google.dagger:dagger-android:2.21'
+    api 'com.google.dagger:dagger-android-support:2.21'
+}
