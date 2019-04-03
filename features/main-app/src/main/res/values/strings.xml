@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_home">@string/my_team</string>
+    <string name="menu_teams">@string/scoreboard</string>
+    <string name="menu_settings">@string/settings</string>
+</resources>

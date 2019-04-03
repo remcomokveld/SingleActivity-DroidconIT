@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_favorite_team">Select Favorite Team</string>
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="subscribe_button">Subscribe (%1$s/%2$s)</string>
+    <string name="play_not_available">Play Store not available</string>
+</resources>

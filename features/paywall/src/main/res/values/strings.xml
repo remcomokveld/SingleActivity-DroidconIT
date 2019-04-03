@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_rogers">login with rogers</string>
+    <string name="login_nhl_account">login with existing account</string>
+    <string name="start_free_trial">start free trial</string>
+    <string name="welcome_to_rogers_nhl">Welcome to\nRogers NHL</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="page_indicator">%1$d/2</string>
+    <string name="continue_btn">Continue</string>
+    <string name="start_using_app_btn">Start using the App</string>
+    <string name="skip">Skip</string>
+    <string name="thanks_for_subscribing">Thanks for subscribing</string>
+    <string name="splash">Splash</string>
+    <string name="watch_all_live">Watch all NHL games live</string>
+</resources>
